@@ -5,7 +5,7 @@ body {
 }
 
 .navbar {
-    background-color: #0aa9f3;
+    background-color: #960af3;
     color: #fff;
     padding: 10px 0;
 }
@@ -51,7 +51,7 @@ body {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f34eeb;
+    background-color: #9e539a;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -171,7 +171,7 @@ body {
   padding: 6px;
   justify-content: space-evenly;
   align-items: flex-start;
-  background-color: #5cb85c;
+  background-color: #f2adf5;
   margin: 1% 13%;
   border: solid #000000;
   border-radius: 5px;
@@ -191,7 +191,7 @@ body {
   padding: 6px;
   justify-content: center;
   align-items: center;
-  background-color: #f34eeb;
+  background-color: #ac5fa8;
   margin: 1% 13%;
   border: solid #000000;
   border-radius: 5px;
@@ -200,7 +200,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: orange;
+  background-color: rgb(228, 189, 139);
   margin: 1% 13%;
   border: solid #000000;
   border-radius: 5px;
@@ -280,7 +280,7 @@ img {
 
 .modal-header, .modal-footer {
   padding: 10px;
-  background-image: linear-gradient(to bottom right, rgba(0, 81, 255, 0.966), rgb(6, 233, 6));
+  background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.966), rgb(6, 233, 6));
 }
 
 .modal-body {
