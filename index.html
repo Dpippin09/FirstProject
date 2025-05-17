@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Replay Realm</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./assets/styles.css">
+</head>
+<body> 
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <a href="#">Replay Realm</a>
+            </div>
+            <div class="navbar-menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#">Products</a>
+                        <div class="dropdown-content">
+                            <a href="electronics.html">Electronics</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">More</a>
+                        <div class="dropdown-content">
+                            <a href="#product">About Us</a>
+                            <a href="#contact">Contact Us</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button type="submit">Search</button>
+            </div>
+            <div class="shopping-cart">
+                <a id="myBtn" target="_blank" href="./cart.html"><i class='bx bx-cart bx-tada'></i></a>
+            </div>
+        </div>
+    </nav>
+    <!-- Products -->
+    <div class="container2">
+        <section id="about">
+            <h2><u>Products</u></h2>
+            <p>Check out some of our amazing products. Click on any one of the images to take you to our main products page!</p>
+        </section>
+        <section id="pictureBox">
+            <a href="electronics.html"><img src="assets\Images\PS5.png" alt="PS5" style="width:100px;height:100px;"></a>
+            <a href="electronics.html"><img src="assets\Images\laptop1.jpg" alt="Laptop" style="width:150px;height:100px;"></a>
+            <a href="electronics.html"><img src="assets\Images\laptop2.jpg" alt="Laptop" style="width:150px;height:100px;"></a>
+            <a href="electronics.html"><img src="assets\Images\XBox.png" alt="Xbox" style="width:100px;height:100px;"></a>
+    </section>
+    </div>
+    <div class="container1">
+        <section class="about-us" id="product">
+            <h2><u>About Us</u></h2>
+            <p>A small group dedicated to giving premium experiences to extrordinary individuals. Focus is currently on selling you amazing electronics but looking forward to adding a variety of products soon!</p>
+            <h4>Meet the team!</h4>
+            <!-- <ul>
+                <li><b>Michael:</b> "I am Beyoncé, always."</li>
+                <br>
+                <li><b>David:</b> “I say dance, they say, How high?”</li>
+                <br>
+                <li><b>Thai:</b> "I am faster than 80 percent of all snakes."</li>
+                <br>
+                <li><b>Kyle:</b> "I'm not superstitious...but I'm a little stitious."</li>
+            </ul> -->
+        </section>
+        <section class="about-us" id="something">
+            <img src="assets\Images\familyphoto.png" alt="DaFam" style="width:350px;height:225px;">
+            <h3>Our Family Photo</h3>
+        </section>
+    </div>
+    <!-- Giveaway Section -->
+    <div class="container3">
+        <section id="giveaway">
+            <h2>Try Our Giveaway!</h2>
+            <p>Click here to enter the giveaway!</p>
+            <!-- <section id="giveAwayBox"> -->
+            <!-- Modal -->
+            <button id="openModalBtn">Click Here!!</button>
+            <div id="myModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Thanks for entering our Giveaway!</h2>
+                </div>
+                <div class="modal-body">
+                <p> <a id="giveaway-link"> </a> </p>
+                </div>
+                <div class="modal-footer">
+                <h3>Happy Gaming!</h3>
+                </div>
+            </div>
+            </div>
+            <!-- </section> -->
+        </section>
+    </div>
+    <script src="assets/script.js"></script>
+    <!-- Footer -->
+    <footer id="section4" class="footer">
+
+        <div class="social">
+            <a href="https://www.linkedin.com/home" target="_blank"><i class='bx bxl-linkedin-square' ></i></a>
+            <a href="https://twitter.com/?lang=en" target="_blank"><i class='bx bxl-twitter'></i></a>
+            <a href="https://github.com/" target="_blank"><i class='bx bxl-github'></i></a>
+            <a href="https://www.facebook.com/" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class='bx bxl-instagram-alt' ></i></a>
+        </div>
+            <div id="contact">
+            <h2>Click our names below to see our work!</h2>
+        </div>
+
+    
+        <p class="copyright">© 2024 Team Dunder Mifflin Infinity | All Rights Reserved</p>
+    </footer>
+</body>
+</html>

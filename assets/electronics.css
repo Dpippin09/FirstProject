@@ -1,0 +1,225 @@
+/* General body styles */
+body {
+  background: #f7f9fa;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar styles */
+.navbar {
+  background: #232946;
+  color: #fff;
+  padding: 0;
+  border-radius: 0;
+  border: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  height: 64px;
+}
+.logo a {
+  color: #fff;
+  font-size: 1.7em;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+.navbar-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 24px;
+}
+.navbar-menu ul li {
+  position: relative;
+}
+.navbar-menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 12px;
+  transition: background 0.2s;
+  border-radius: 4px;
+}
+.navbar-menu ul li a:hover {
+  background: #393e6a;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: #393e6a;
+  min-width: 140px;
+  z-index: 1;
+  border-radius: 0 0 6px 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content a {
+  color: #fff;
+  padding: 10px 16px;
+  display: block;
+  text-decoration: none;
+}
+.dropdown-content a:hover {
+  background: #232946;
+}
+
+/* Search bar */
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.search-bar input[type="text"] {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+.search-bar button {
+  background: #232946;
+  color: #fff;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.search-bar button:hover {
+  background: #393e6a;
+}
+
+/* Shopping cart icon */
+.shopping-cart a {
+  color: #fff;
+  font-size: 1.7em;
+  margin-left: 18px;
+  transition: color 0.2s;
+}
+.shopping-cart a:hover {
+  color: #eebbc3;
+}
+
+/* Product panels */
+.panel-primary {
+  border-color: #232946;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(35,41,70,0.07);
+  margin-bottom: 28px;
+}
+.panel-heading {
+  background: #232946 !important;
+  color: #fff !important;
+  font-weight: 600;
+  font-size: 1.15em;
+  border-radius: 10px 10px 0 0;
+  padding: 12px 16px;
+}
+.panel-body {
+  background: #fff;
+  padding: 18px 12px 12px 12px;
+  border-radius: 0 0 0 0;
+}
+.panel-footer {
+  background: #f0f1f6 !important;
+  border-radius: 0 0 10px 10px;
+  padding: 12px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Product images */
+.panel-body img {
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  margin-bottom: 8px;
+}
+
+/* Add To Cart button */
+.saveButton {
+  background: #eebbc3;
+  color: #232946;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  margin-top: 4px;
+}
+.saveButton:hover {
+  background: #232946;
+  color: #fff;
+}
+
+/* Footer styles */
+.footer {
+  background: #232946;
+  color: #fff;
+  padding: 32px 0 16px 0;
+  text-align: center;
+  margin-top: 40px;
+}
+.footer .social {
+  margin-bottom: 18px;
+}
+.footer .social a {
+  color: #eebbc3;
+  font-size: 2em;
+  margin: 0 10px;
+  transition: color 0.2s;
+}
+.footer .social a:hover {
+  color: #fff;
+}
+.footer .list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 12px 0;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.footer .list li a {
+  color: #eebbc3;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.footer .list li a:hover {
+  color: #fff;
+}
+.footer .copyright {
+  font-size: 0.95em;
+  color: #b8b8b8;
+  margin-top: 10px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 991px) {
+  .navbar-container {
+    flex-direction: column;
+    height: auto;
+    gap: 10px;
+    padding: 12px;
+  }
+  .navbar-menu ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .footer .list {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
